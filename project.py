@@ -5,25 +5,7 @@ person_dict = {}
 def add_person():
     print("\n1.Entry\n2.Delete")
     cho=input("Enter what you want choice(Entry/Delete): ")
-    if cho in ["entry","Entry","New","new"]:
-        entries=int(input("Enter no. of entries: "))
-        for i in range(entries):
-            rand=m.randrange(3)
-            print("Total numbers of room : 573 \n ","Total numbers of room available  : ",573-len(person_dict) )
-            if rand not in person_dict:
-                person_details = {"Name": input("Enter the name of the person: "),
-                          "Age": int(input("Enter the age of the person: ")),
-                          "Address": str(input("Enter the address of the person: ")),
-                          "Contact Number": int(input("Enter the contact number of the person: "))}
-                person_dict[rand]=person_details
-            else:
-                print("No Rooms Available")
-    elif cho in ["Delete","delete"]:
-        idwe=int(input("Enter your id: "))
-        del person_dict[idwe] 
-    print("completed successfully!!\n",person_dict)
-
-def search_person():
+    if cho in ["entry","
     f=int(input("Input Your Id: "))
     # Check if the name is in the dictionary
     if f in person_dict:         
